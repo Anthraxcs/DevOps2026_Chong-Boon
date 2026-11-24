@@ -1,14 +1,12 @@
 name: Simple CI Workflow
 on:
   push:
-    branches: [Main]
+    branches: [main]
 
 jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
-      - uses: action/checkout@v7
-      - name: List Files
+      - uses: actions/checkout@v7
+      - name: List files
         run: |
-          ls
-          echo "Hello"
