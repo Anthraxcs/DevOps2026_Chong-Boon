@@ -1,7 +1,7 @@
 name: Simple CI Workflow
 on:
   push:
-      branches: [Main]
+    branches: [Main]
 
 jobs:
   build:
